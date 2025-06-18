@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amit Shekhare | Product Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #f0f4f8, #e2e8f0);
+      color: #222;
+      line-height: 1.6;
+      animation: fadeInBody 1s ease-in;
+    }
+
+    header, section, footer {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    header {
+      animation-delay: 0.2s;
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      border-bottom: 4px solid #0f172a;
+      border-radius: 0 0 20px 20px;
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #cbd5e1;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 4px solid #64748b;
+    }
+
+    section {
+      animation-delay: 0.5s;
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+
+    .project {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      margin-top: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
+      margin-top: 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .project img:hover {
+      transform: scale(1.02);
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .skills-list li {
+      list-style: none;
+      background: #fff;
+      padding: 0.8rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .testimonial {
+      background: #ffffff;
+      border-left: 4px solid #14b8a6;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+
+    .testimonial p {
+      font-style: italic;
+    }
+
+    .testimonial span {
+      display: block;
+      margin-top: 0.5rem;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    .resume-link {
+      margin-top: 1rem;
+      display: inline-block;
+      background-color: #14b8a6;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .resume-link:hover {
+      background-color: #0f766e;
+    }
+
+    footer {
+      animation-delay: 0.8s;
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      border-top: 4px solid #0f172a;
+      border-radius: 20px 20px 0 0;
+    }
+
+    a {
+      color: #14b8a6;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0f766e;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header, section, footer {
+        padding: 1rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Amits pic.jpg" alt="Amit Shekhare Profile Picture">
+    <h1>Amit Shekhare</h1>
+    <p>Product Designer | UI/UX | Visual Storyteller</p>
+    <p><a href="mailto:amitshekhare2001@gmail.com">amitshekhare2001@gmail.com</a> |
+       <a href="http://www.linkedin.com/in/amit-shekhare-7b680225a" target="_blank">LinkedIn</a></p>
+  </header>
+
+  <section>
+    <h2>Featured Project</h2>
+    <div class="project">
+      <h3>KGamify Website Design (Internship Project)</h3>
+      <p><strong>Duration:</strong> Jan 2025 – Jun 2025</p>
+      <p><strong>Role:</strong> Product Designer</p>
+      <p><strong>Tools:</strong> Figma, HTML/CSS, Javascript,React</p>
+      <p><strong>Overview:</strong> Designed a user-friendly learning platform during my internship at KGamify.</p>
+      <ul>
+        <li>Created responsive wireframes and prototypes in Figma</li>
+        <li>Worked closely with frontend team on implementation</li>
+        <li>Improved UX, navigation, and user engagement</li>
+      </ul>
+      <img src="Home page.png" alt="KGamify Home Page Design">
+      <img src="features Detail page 1 for events.png" alt="KGamify Features Detail Page">
+    </div>
+  </section>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I’m a final-year engineering student with a strong passion for user-centered design. I believe in creating meaningful digital experiences with empathy and precision. I specialize in UI/UX design, prototyping, and solving real-world design challenges.</p>
+
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>UI/UX Design</li>
+      <li>Figma & Prototyping</li>
+      <li>HTML, CSS, React</li>
+      <li>Wireframing & User Flow Mapping</li>
+      <li>User Research & Testing</li>
+    </ul>
+
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>“Amit has a strong eye for design detail and usability. He brought great ideas during his internship.”</p>
+      <span>— Senior Designer, KGamify</span>
+    </div>
+    <div class="testimonial">
+      <p>“Working with Amit was a pleasure. His proactive mindset and clear communication were top-notch.”</p>
+      <span>— Frontend Developer, KGamify</span>
+    </div>
+
+    <h2>Resume</h2>
+    <p>You can download my latest resume below:</p>
+    <a class="resume-link" href="./Amit_Shekhare_Viit.pdf" download>Download Resume</a>
+  </section>
+
+  <footer>
+    <p>Let’s connect — <a href="mailto:amit.22210894@viit.ac.in">amit.22210894@viit.ac.in</a></p>
+    <p>&copy; 2025 Amit Shekhare</p>
+  </footer>
+</body>
+</html>
